@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 
-const max = 491;
-
 function App() {
     const [norm, setNorm] = useState(false);
     const [datesCnt, setDatesCnt] = useState(0);
     const Spans = Array.from(Array(datesCnt).keys());
 
+    const d1 = new Date('02/24/2022');
+    const d2 = new Date();
+    const max = Math.ceil((d2.getTime() - d1.getTime()) / (1000 * 3600 * 24));
     const text = 'Не норм; ';
 
     useEffect(() => {

@@ -24,3 +24,7 @@
     cursor: pointer;
     color: black;
 }
+
+.button:visited {
+    color: black;
+}

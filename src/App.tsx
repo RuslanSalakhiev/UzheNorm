@@ -57,7 +57,7 @@ function App() {
                     style={{ opacity: `${Spans.length === max ? 1 : 0}` }}
                     className="text"
                 >
-                    День 0: Началась война
+                    День 0: Началась война.
                 </span>
             </div>
         </>
